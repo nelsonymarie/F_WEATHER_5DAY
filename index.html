@@ -1,0 +1,40 @@
+<!--This code creates an HTML page that renders a map with directions from the Mapbox GL Directions API.
+It also includes a link to the Mapbox GL JS library and a link to the Mapbox GL Directions plugin. Additionally,
+it creates an element with the ID of "map" which will be used to display the map,
+and an element with the ID of "info" for displaying information about the map.
+Finally, it includes a link to the main.js script which will be used to run the code.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+    type="text/css"
+  />
+  <title>Forecast 5 Weather</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #map {
+      height: 100vh;
+      width: 100vw;
+    }
+  </style>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/main.js" defer></script>
+
+</head>
+<body>
+  <div id='map'></div>
+  <div id="info"></div>
+</body>
+</html>
